@@ -1,0 +1,97 @@
+*{ box-sizing: border-box;}
+
+body{
+  margin: 0;
+  background-color: #f9f9f9;
+   font-family: 'lato';
+}
+.navbar{
+  background-color: #2a74f5cf;
+}
+.header_h1{
+display: inline-block;
+color: #f9f9f9;
+}
+.w_menu_header{
+  position: fixed;
+  width: 100%;
+    z-index: 999;
+  display: block;
+}
+.m_menu_header{
+  display: none;
+  }
+
+  .head_image{
+    width: 50px;
+    height: 50px;
+  }
+  .space{
+    height: 90px;
+  }
+  .trip_body{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+  }
+.carousel-item img{
+  height: 400px;
+}
+.carousel-caption{
+  background-color:#3e3e5785;
+}
+.object3{width: 1200px; margin: 0 auto; margin-top: 100px;}
+.object3 img{width: 40%; border-style: solid; border-color:#1CF0F9; border-width: 10px; float: left; margin: 0 20px 20px 0;}
+.object3 p{ font-size: 2.5rem; text-align: justify;}
+
+.object4{width: 1200px; margin: 0 auto; margin-top: 100px;}
+.object4 img {width: 200px; height: 200px; border-radius: 100%;}
+.obj4{box-shadow: 1px 1px 5px #555; width: 80%; padding: 10px 10px 10px 10px; border-radius: 10px;}
+.obj4 h2{font-size: 2rem;}
+  .obj4 p{ text-align: justify; font-size: 1.5rem;}
+.ob{display: flex; justify-content: space-between; margin-bottom: 50px; text-align: center;}
+.ob:nth-child(odd){display: flex; justify-content: space-between; flex-direction: row-reverse; text-align: right; }
+
+
+@media (max-width:1200px) {
+
+  .object3{width: 95%;}
+  .object4{width: 95%;}
+  
+    }
+
+  @media only screen and (max-width: 900px) {
+   .header_h1{
+     font-size: 1.3em;
+    }
+     .head_image{
+      width: 30px;
+      height: 30px;
+         }
+         .trip_body{
+          width: 100%;
+          
+        }
+  }
+  
+  @media (max-width:600px) {
+  .ob{display: flex; justify-content:center; flex-direction: column;margin-bottom: 50px;}
+  .ob:nth-child(odd){display: flex; justify-content: center; flex-direction: column; text-align: right; }
+    }
+
+
+
+@media only screen and (max-width: 800px) {
+  .w_menu_header{
+    display: none;
+  }
+  .m_menu_header{
+    display: block;
+    }
+    .header_h1{
+      font-size: 1.8em;
+     }
+     .space{
+      height: 0px;
+    }
+}

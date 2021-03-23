@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+     <link rel="shortcut icon" href="assets/img/good-trip-logo.ico">
+
+    <title>Good Trip</title>
+ </head>
+
+<body>
+    <!--un header pour les pages web-->
+    <header class="headline">
+        <div class="w_menu_header">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="assets/img/good-trip-logo.png" class="head_image d-inline-block align-top"
+                        alt="">
+                    <h1 class="header_h1">GOOD TRIP</h1>
+                </a>
+
+                <div class="ml-auto" id="navbarNav">
+                    <ul class="nav">
+                        <li class="card-item">
+                            <a class="nav-link btn btn-light active mx-2" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-light mx-2" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-light mx-2" href="propos.html">à propos de nous</a>
+                        </li>
+                        <li class="nav-item" id="con_p">
+                            <button class="btn btn-outline-light mx-2" type="submit" id="conBtn2">Connexion</button>
+                        </li>
+                        <li class="nav-item" id="dec_p">
+                            <button id="myBtn2" class="btn btn-outline-light mx-2" type="submit">Inscription</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<!--header pour le mobile -->
+        <div class="m_menu_header">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/good-trip-logo.png" width="50" height="50" class="d-inline-block align-top"
+                        alt="">
+                    <h1 class="header_h1">GOOD TRIP</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-outline-light my-2" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light my-2" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light my-2" href="propos.html">à propos de nous</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2"><div id="con_p">
+                    <button class="btn btn-outline-light my-2" type="submit" id="conBtn">Connexion</button></div>
+                    <div id="dec_p">
+                    <button id="myBtn" class="btn btn-outline-light my-2" type="submit">Inscription</button></div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--slideshow-->
+<section class="trip_body">
+    <article class="space"></article>
+    <section class="fullfrom">
+        <div id="profil_pict" class="photo offset-4 col-4">
+            <img src="assets/img/profile.png" class="rounded-circle profile_img" alt="Image de profil">
+          </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Votre Email</label>
+      <input id="email" type="email" class="form-control" placeholder="email" disabled>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Pseudo</label>
+      <input id="pseudo" type="text" class="form-control" placeholder="Pseudo">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Nom</label>
+      <input id="nom" type="text" class="form-control" placeholder="Nom">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Prénom</label>
+      <input id="prenom" type="text" class="form-control" placeholder="Prénom">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Age</label>
+      <input id="age" type="number" class="form-control" placeholder="Age">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">selecte Genre : </label>
+        <select class="custom-select" id="gender">
+             <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            
+          </select>
+    </div>
+
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Téléphone</label>
+      <input id="phone" type="number" class="form-control" placeholder="Téléphone" required>
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Adresse complète</label>
+      <input id="adresse" type="text" class="form-control" required placeholder="Adresse complète">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Pays</label>
+      <input id="pays" type="text" class="form-control" placeholder="Pays">
+    </div>
+    <div class="form-group">
+  
+      <div id="profil_pict2" class="exampleFormControlFile1">Profile photo
+        <img src="assets/img/profile.png" class="rounded-circle" width="30px" height="30px" alt="Image de profil">
+      </div><input type="file" id="file" name="file"/> 
+    </div>
+    <button type="button" class="btn btn-primary" id="valider">Valider</button>
+ 
+  </section>
+
+
+   
+    <footer class="footer mt-auto py-3">
+        <div class="container mt-5 row">
+          <span class="text-muted col-md-6 col-sm-12 text-center"> Good Trip &copy copyright 2018-<script>
+            var d = new Date();
+            document.write(d.getFullYear());
+            </script> All rights reserved. </span> <span class="text-muted col-md-6 col-sm-1 text-center">  Terms of Use | Privacy Policy</span>
+        </div>
+      </footer>
+
+    </section>
+    
+      
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+      <!-- Add additional services that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script>
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (!user) {
+         
+            location.href = "index.html";
+      
+            
+          } });
+
+          window.onload = function () {
+      initapp();
+  }
+          </script>
+</body>
+
+</html>

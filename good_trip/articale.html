@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+     <link rel="shortcut icon" href="assets/img/good-trip-logo.ico">
+
+    <title>Good Trip</title>
+ </head>
+
+<body>
+    <!--un header pour les pages web-->
+    <header class="headline">
+        <div class="w_menu_header">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="assets/img/good-trip-logo.png" class="head_image d-inline-block align-top"
+                        alt="">
+                    <h1 class="header_h1">GOOD TRIP</h1>
+                </a>
+
+                <div class="ml-auto" id="navbarNav">
+                    <ul class="nav">
+                        <li class="card-item">
+                            <a class="nav-link btn btn-light active mx-2" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-light mx-2" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-light mx-2" href="propos.html">à propos de nous</a>
+                        </li>
+                        <li class="nav-item" id="con_p">
+                            <button class="btn btn-outline-light mx-2" type="submit" id="conBtn2">Connexion</button>
+                        </li>
+                        <li class="nav-item" id="dec_p">
+                            <button id="myBtn2" class="btn btn-outline-light mx-2" type="submit">Inscription</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<!--header pour le mobile -->
+        <div class="m_menu_header">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/good-trip-logo.png" width="50" height="50" class="d-inline-block align-top"
+                        alt="">
+                    <h1 class="header_h1">GOOD TRIP</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link btn btn-outline-light my-2" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light my-2" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light my-2" href="propos.html">à propos de nous</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 row"><div id="con_p" class="col-6">
+                    <div class="btn btn-outline-light mx-2" id="conBtn">Connexion</div></div>
+                    <div id="dec_p" class="col-6">
+                    <div id="myBtn" class="btn btn-outline-light mx-2">Inscription</div></div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--slideshow-->
+<section class="trip_body">
+    <article class="space"></article>
+
+      <!--nos articles (distination de voyage) -->
+      <style>.agile-w3l-ab {
+        background: #fff;
+      padding: 2em;
+      border: 10px solid #363632;
+      position: relative;
+      width: 63%;
+  }
+  .ab-agile-bottom p {
+      color: #fff;
+      line-height: 2.8;
+      text-align: left;
+      margin: 1em 0;
+  }
+  .sign-up {
+      float: left;
+      text-transform: uppercase;
+  }
+  .ab-agile-top {
+      position: absolute;
+      top: 22%;
+      left: 55%;
+      padding: 3em 2em;
+      background: #0de2f6;
+      z-index: 99;
+  }
+  .about-w3l-agileifo-grid {
+      position: relative;
+  }
+  .ab-agile-top h3{
+      font-size: 2.5em;
+      color: #fff;
+      font-weight: 400;
+  }</style>
+ 
+      <div class="about" id="about">
+        
+    </div>
+    
+   
+
+   
+    <footer class="footer mt-auto py-3">
+        <div class="container mt-5 row">
+          <span class="text-muted col-md-6 col-sm-12 text-center"> Good Trip &copy copyright 2018-<script>
+            var d = new Date();
+            document.write(d.getFullYear());
+            </script> tous droits réservés. </span> <span class="text-muted col-md-6 col-sm-1 text-center">  Terms of Use | Privacy Policy</span>
+        </div>
+      </footer>
+
+    </section>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h2>Inscription</h2><span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+           <div class="form-group" id="validmail">
+          <label for="exampleInputEmail1">adresse mail</label>
+          <input type="email" class="form-control" id="inscription_mail" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">mettez une adresse mail valide pour pouvoir vous inscrire</small>
+        </div>
+          </div>
+          <div class="modal-footer" id="validbtn">
+            <button class="btn btn-outline-light my-2" type="button" id="inscription">Valider</button>
+          </div>
+        </div>
+      
+      </div>
+
+      <div id="regModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h2>Inscription</h2><span class="regclose">&times;</span>
+          </div>
+          <div class="modal-body">
+           <div class="form-group" id="validmail">
+          <label for="exampleInputEmail1">Votre adresse</label>
+          <input type="email" class="form-control" id="reg_mail" aria-describedby="emailHelp" placeholder="mettre l'email" disabled>
+          <small id="emailHelp" class="form-text text-muted">Votre mail valide</small>
+        </div>
+        <div class="form-group" id="validmail">
+          <label for="exampleInputEmail1">Mot de passe</label>
+          <input type="password" class="form-control" id="reg_pass" aria-describedby="passHelp" placeholder="mettre le mot de passe">
+          <small id="passHelp" class="form-text text-muted">Mettez un mot de passe valide pour pouvoir vous inscrire</small>
+        </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-light my-2" type="button" id="register">Inscription</button>
+          </div>
+        </div>
+      
+      </div>
+
+      <div id="conModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <h2>Connexion</h2><span class="conclose">&times;</span>
+          </div>
+         
+          <div class="modal-body">
+           <div class="form-group" id="validmail">
+          <label for="exampleInputEmail1">Votre adresse mail</label>
+          <input type="email" class="form-control" id="con_mail" aria-describedby="emailHelp" placeholder="mettre l'email">
+         
+        </div>
+        <div class="form-group" id="validmail">
+          <label for="exampleInputEmail1">Mot de passe</label>
+          <input type="password" class="form-control" id="con_pass" aria-describedby="passHelp" placeholder="mettre le mot de passe">
+          <small id="conHelp" class="form-text text-muted">Mettez un mot de passe valide pour pouvoir vous inscrire</small>
+        </div>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-outline-light my-2" type="button" id="conection">connexion</button>
+          
+          </div>
+        </div>
+      
+      </div>
+
+      
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+      <!-- Add additional services that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-storage.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
